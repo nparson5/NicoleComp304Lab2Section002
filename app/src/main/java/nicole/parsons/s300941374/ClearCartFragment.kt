@@ -20,7 +20,7 @@ class ClearCartFragment : DialogFragment() {
             mListener = context as NoticeDialogListener
         } catch (e: ClassCastException) {
             throw ClassCastException((context.toString() +
-                    " must implement NoticeDialogListener"))
+                    " implement NoticeDialogListener"))
         }
     }
 
@@ -35,6 +35,6 @@ class ClearCartFragment : DialogFragment() {
                     mListener.onDialogNegativeClick(this)
                 }
             builder.create()
-        } ?: throw IllegalStateException("Activity cannot be null")
+        } ?: throw IllegalStateException("activity can't be null")
     }
 }

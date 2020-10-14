@@ -10,6 +10,7 @@
     <string name="cancel">" annuler"</string>
     <string name="cash">espèces</string>
     <string name="credit_card">crédit</string>
+    <string name="errorMessage">Ce champ est requis!</string>
     <string name="proceedToOrder">procéder</string>
     <string name="apartment">" appartement"</string>
     <string name="detached">détaché</string>

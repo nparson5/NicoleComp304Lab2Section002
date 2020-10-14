@@ -149,7 +149,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:checked="true"
-                                android:onClick="radio_button_click"
+                                android:onClick="onRadioChange"
                                 android:orientation="horizontal"
                                 android:text="@string/cash" />
 
@@ -158,7 +158,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:onClick="radio_button_click"
+                                android:onClick="onRadioChange"
                                 android:orientation="horizontal"
                                 android:text="@string/credit_card" />
 
@@ -167,7 +167,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:onClick="radio_button_click"
+                                android:onClick="onRadioChange"
                                 android:orientation="horizontal"
                                 android:text="@string/visa" />
                         </RadioGroup>

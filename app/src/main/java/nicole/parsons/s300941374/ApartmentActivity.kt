@@ -12,7 +12,7 @@ class ApartmentActivity : AbstractOptionsMenuActivity() {
 
 
 
-
+//populate apartment type
     private val apartmentItems: Array<Home> = arrayOf(
         Home("454 Hulu Lane", 1000.00, HomeType.APARTMENT.name, R.drawable.apt1, false),
         Home("787 Flix Road", 1600.00, HomeType.APARTMENT.name, R.drawable.apt2, false),
@@ -22,10 +22,8 @@ class ApartmentActivity : AbstractOptionsMenuActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_apartment)
-        nicoleImg.setImageResource(0)
+        nicoleImg.setImageResource(0)//no image
         apartmentItems.map { home ->
-
-
 
             val btn = CheckBox(this)
             btn.text = home.name

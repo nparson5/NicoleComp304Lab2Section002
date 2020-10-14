@@ -6,9 +6,7 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_payment.*
 
 class PaymentActivity : AppCompatActivity() {
@@ -25,7 +23,7 @@ class PaymentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_payment)
 
-        nicoleCardInfo.visibility = View.GONE;
+        nicoleCardInfo.visibility = View.GONE
 
         val home=intent.getStringExtra("home")
 
@@ -35,21 +33,15 @@ class PaymentActivity : AppCompatActivity() {
                 info.text = "Purchasing ${home} for \$%.2f".format(homePrice)
                 nicolePurchaseInfoTv.addView(info)
 
-
-/*
-        val info = TextView(this)
-        info.text = "YEEEETERONI"
-        nicolePurchaseInfoTv.addView(info)
-*/
     }
 
 
 
-    fun radio_button_click(view: View) {
+    fun onRadioChange(view: View) {
         if(nicoleCashRadioButton.isChecked)
         {
 
-            nicoleCardInfo.visibility = View.GONE;
+            nicoleCardInfo.visibility = View.GONE
             nicoleCardTxt.error = null
             nicoleCvcTxt.error = null
             nicoleYearTxt.error = null
@@ -57,7 +49,7 @@ class PaymentActivity : AppCompatActivity() {
         }
         else{
 
-            nicoleCardInfo.visibility = View.VISIBLE;
+            nicoleCardInfo.visibility = View.VISIBLE
         }
 
     }
@@ -74,11 +66,11 @@ class PaymentActivity : AppCompatActivity() {
         //check if the EditText have values or not
         if(name.trim().isEmpty()) {
 
-            nicoleFullNameTxt.error = "This field is required!";
+            nicoleFullNameTxt.error = "This field is required!"
         }else
 
             if(!email.contains("@")){
-                nicoleEmailTxt.error = "Enter a proper email!";
+                nicoleEmailTxt.error = "Enter a proper email!"
             }else
 
                 if(address.trim().isEmpty()){

@@ -3,6 +3,7 @@ package nicole.parsons.s300941374
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.TextView
 import androidx.fragment.app.DialogFragment
@@ -11,15 +12,13 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_menu.*
-import kotlinx.android.synthetic.main.activity_payment.*
-import android.widget.RadioButton as RadioButton
 
 class MenuActivity : AbstractOptionsMenuActivity(), ClearCartFragment.NoticeDialogListener,
     RadioGroup.OnCheckedChangeListener {
 
 
-    var passingHomeName: String? = null
-    var passingHomePrice: Double? = null
+    private var passingHomeName: String? = null
+    private var passingHomePrice: Double? = null
     private var disposable: CompositeDisposable = CompositeDisposable()
     override fun onDestroy() {
         super.onDestroy()
@@ -115,10 +114,10 @@ class MenuActivity : AbstractOptionsMenuActivity(), ClearCartFragment.NoticeDial
                     return
                 }
                 else {
-                    val intent = Intent(this,PaymentActivity::class.java);
+                    val intent = Intent(this,PaymentActivity::class.java)
                     intent.putExtra("home", passingHomeName)
                     intent.putExtra("homePrice",passingHomePrice)
-                    startActivity(intent);
+                    startActivity(intent)
                 }
             }
         }
@@ -137,7 +136,7 @@ class MenuActivity : AbstractOptionsMenuActivity(), ClearCartFragment.NoticeDial
 
         val nameTv = RadioButton(this)
         nameTv.text = home.name
-        nameTv.id=id;
+        nameTv.id=id
 
         rg.addView(nameTv)
 
