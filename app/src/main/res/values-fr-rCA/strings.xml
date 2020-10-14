@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NicoleLab2</string>
+    <string name="Addresses">" l' allocution"</string>
+    <string name="cost">" prix"</string>
+    <string name="payment_method">" méthodes de payement"</string>
+    <string name="clear_selection">" effacer"</string>
+    <string name="clear_confirmation">" effacer?"</string>
+    <string name="confirm">vérifier</string>
+    <string name="cancel">" annuler"</string>
+    <string name="cash">espèces</string>
+    <string name="credit_card">crédit</string>
+    <string name="proceedToOrder">procéder</string>
+    <string name="apartment">" appartement"</string>
+    <string name="detached">détaché</string>
+    <string name="semi">maison jumelée</string>
+    <string name="town">maison de ville</string>
+    <string name="expiry">" expiration"</string>
+    <string name="card_number">numéro de carte</string>
+    <string name="card">carte</string>
+    <string name="enter_address">Entrez votre adresse</string>
+    <string name="address">adresse</string>
+    <string name="enter_email">Entrez votre email</string>
+    <string name="enter_name">Entrez votre nom</string>
+    <string name="full_name">Nom</string>
+    <string name="nicoleMonthTxt">" mois d'expiration"</string>
+    <string name="year">année d\'expiration</string>
+    <string name="submit">soumettre</string>
+    <string name="Enter">soumettre</string>
+</resources>
