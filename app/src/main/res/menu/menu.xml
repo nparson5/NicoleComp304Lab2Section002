@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_apartmentBtn"
+        android:title="@string/apartment" />
+    <item
+        android:id="@+id/menu_detachedBtn"
+        android:title="@string/detached" />
+    <item
+        android:id="@+id/menu_semiBtn"
+        android:title="@string/semi" />
+    <item
+        android:id="@+id/menu_condoBtn"
+        android:title="@string/condo" />
+    <item
+        android:id="@+id/menu_townBtn"
+        android:title="@string/town" />
+</menu>
