@@ -18,15 +18,18 @@
     <LinearLayout
         android:id="@+id/nicolePurchaseInfoTv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nicoleBillingInfoTxt">
 
         <ScrollView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
 
             >
 
@@ -35,6 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/nicolePurchaseInfoTv">
 
                 <LinearLayout
@@ -243,25 +247,26 @@
                     </LinearLayout>
                 </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/nicoleSubmitBtnLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/nicoleSubmitBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="submitOrder"
+                        android:text="@string/submit"
+                        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatButton>
+                </LinearLayout>
+
 
             </LinearLayout>
 
         </ScrollView>
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/nicoleSubmitBtnLayout"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/nicoleSubmitBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:onClick="submitOrder"
-            android:text="@string/submit"></androidx.appcompat.widget.AppCompatButton>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

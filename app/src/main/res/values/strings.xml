@@ -31,7 +31,7 @@
     <string name="enter_name">Enter your name</string>
     <string name="full_name">Full Name</string>
     <string name="customer_info">Information</string>
-    <string name="nicoleMonthTxt">Expiry NicoleMonthTxt</string>
+    <string name="nicoleMonthTxt">Expiry month</string>
     <string name="submit">Submit</string>
     <string name="year">Expiry Year</string>
     <string name="total">Total:</string>
